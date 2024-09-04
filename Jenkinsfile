@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Hahasha4/ci-cd-calci-app'
+                git branch: 'main', url: 'https://github.com/Hahasha4/ci-cd-calci-app'
             }
         }
         stage('Test') {
